@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta data for writing the author name and the description helps the users for Search Engine Optimization -->
+    <meta name="author" content="Krishab Munankarmi">
+    <meta name="description" content="Daily Blog Page of printerworld">
+    <!-- meta data for writing the author name and the description helps the users for Search Engine Optimization -->
+    <!--Title of the page-->
+    <title>Blog | printerworld</title>
+    <!--The link provided below is for an external CSS file-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+         @font-face /*@font-face are used to change the fonts which are downloaded*/
+        {
+            font-family:Anton;
+            src: url(../fonts/Anton/Anton-Regular.ttf);
+        }
+        @font-face 
+        {
+            font-family:Baskervville ;
+            src: url(../fonts/Baskervville/Baskervville-Regular.ttf);
+        }
+        @font-face 
+        {
+            font-family:Montserrat ;
+            src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+        }
+        @font-face 
+        {
+            font-family:Oswald ;
+            src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+        }
+
+        .searchbar {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .searchbar input[type="text"] {
+            width: 220px;
+            height: 20px;
+        }
+
+        .Login {
+            background-color: #0e1845; 
+            color: whitesmoke; 
+            border: 2px solid white;
+            font-weight:800;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .shop {
+            background-color: rgb(200, 18, 18); 
+            color: whitesmoke; 
+            border: 1px solid transparent;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p1
+        {
+            font-family: Montserrat;
+        }
+    </style>
+</head>
+<body>
+    <!-- The header section which contains the section's nav bar -->
+    <section id="header"> 
+        <!-- Logo and site name -->     
+           <a href="#" class="logo"><img width="70px" height="70px" src="../images/printer.png" alt="Printer Logo"> </a>
+           <h1>printerworld.com</h1>
+       
+       <!-- Searchbar -->
+       <div class="searchbar">
+           <input type="text" placeholder="Search products, support and more" >
+           <img src="../images/search icon.png" alt="search icon" width="20" height="20">
+       </div>
+
+       <!-- The nav tag contains Navigation Menu  -->
+           <nav >
+               <ul id="nav_link">
+                   <li><a href="../home.html" target="_blank">Home</a></li>
+                   <li><a href="../html/Product.html" target="_blank">Products</a></li>
+                   <li><a href="../html/Blog.html" target="_blank">Blog</a></li>
+                   <li><a href="../html/References.html" target="_blank">References</a></li>
+                   <li><a href="../html/AboutUs.html" target="_blank">About Us</a></li>      
+                   <!-- <li><a href="#" target="_blank"><img src="profile logo.png" style="width: 60px; height: 60px; padding-left: 1px;"></a></li>       -->
+                   <li><a href="#" class="button"><button class="Login">LOG IN</button></a></li>
+               </ul>
+           </nav>
+   </section>
+    <section><!--This section is for the image and the texts written over the image-->
+        <div class="Image">
+            <img src="../images/Blog photo.jpg" alt="image" style="display: inline;">
+            <div class="HeadText">Our Blog Page</div>
+            <div class="SubText">This is our company's blog page where we post about new ideas, concept and concerns.</div>
+        </div>
+    </section>
+    <section id="Table" style="margin-bottom: 600px;"><!--This section is for a side table which helps for navigation in the blog page-->
+        <table align="left" border="10" style="background-color: #0e1845; color:#f1be32; border-color: #f1be32;">
+            <th>
+                Contents: <br><br>
+                    <a href="#Introduction" style="text-decoration: none;">Introduction</a><br><br>
+                    <a href="#Body" style="text-decoration: none;">Body</a>
+                    <ol type="1">
+                        <li><a href="#Improved Communication" style="text-decoration: none;">Improved Communication</a></li><br>
+                        <li><a href="#Increase in Productivity" style="text-decoration: none;">Increase in Productivity</a></li><br>
+                        <li><a href="#Accessibility of Information" style="text-decoration: none;">Accessibility of Information</a></li><br>
+                        <li><a href="#Increase in Commercial Activities" style="text-decoration: none;">Increase in Commercial Activities</a></li><br>
+                        <li><a href="#Hindrance in Privacy" style="text-decoration: none;">Hindrance in Privacy</a></li><br>
+                    </ol>
+                    <a href="#Conclusion" style="text-decoration: none;">Conclusion</a><br><br>
+            </th>
+        </table>
+    </section>
+
+    <section>
+        <!--div class "Technology" has been created for the blog-->
+        <div class="Technology">
+            <!--Heading title of the blog-->
+            <h1 style="font-family: 'Oswald', sans-serif; margin-bottom: -50px; padding-top: 150px;">How technology has affected our daily lives and businesses.</h1>
+            <br><br><br><br><br<br><br>
+            <div><!--Author of the blog-->
+                <img src="../images/profile logo.png" style="width: 60px;" align="left">
+                <p1 style="color: gray; padding-left: 20px; display: inline-block;">John Doe</p1><br><br>
+                <p1 style="color: gray; padding-left: 20px;">Published on: 18/01/2024</p1>
+            </div>
+            <div><!--div tag is used for the introduction part of the blog-->
+                <h2 id="Introduction" style="padding-top: 150px;">Introduction</h2>
+                <p><!--Text content of the introduction-->
+                    In this modern era the use of technology can be seen everywhere, from agriculture, healthcare, business and even socialization. It has mostly made learning, information gathering, and many more things much easier and accessible so much so that multiple communities with similar interests have even collaborated together in order to bring improvements in their respective fields through the internet.<br><br> 
+                    With the help of technology and internet people have even been able to grow their businesses and connect to their customers more. After the rise of e-commerce it was made much easier for entrepreneurs to conduct and manage their business and at the same time making it easier for customers to choose and find the products they are looking for.<br><br>
+					But nonetheless, everything has its advantages and disadvantages and so does technology. With the use of technology growing around us rapidly it has both positive and negative impacts on our society.
+                </p><br>
+                <img src="../images/technology.jpg" alt="Technology" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the body part of the blog-->
+                <h2 id="Body" style="padding-top: 150px;">Some of the ways technology has affected our lives are:</h2>
+                <ol type="1">
+                    <li>Improved Communication</li><br>
+                    <li>Increase in Productivity</li><br>
+                    <li>Accessibility of Information</li><br>
+                    <li>Increase in Commercial Activities</li><br>
+                    <li>Hindrance in Privacy</li>
+                </ol>
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the "Improved Communication" part of the blog-->
+                <h3 id="Improved Communication" style="padding-top: 150px;">1. Improved Communication</h3>
+                <p><!--Text content of the above sub-topic-->
+                    Communication is a very vital part of human life. The ways of communicating has evolved throughout history. Before, people used to write letters in order to communicate with people who were very far and unreachable. But now, we can easily communicate with people even though they live on the other side of the world using cell phones. And with even more further advancements in technology and the internet we can now communicate not only through voice but with video of the person itself, making it feel as if the person is present with you in the room. So, the improvement in communication through technology has certainly turned the world into a small village.
+                </p><br>
+                <img src="../images/Communication.webp" alt="Communication" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the "Increase in Productivity" part of the blog-->
+                <h3 id="Increase in Productivity" style="padding-top: 150px;">2. Increase in Productivity</h3>
+                <p><!--Text content of the above sub-topic-->
+                    For many decades, all the documentations, letters, etc had been done either in handwritten form or with the help of typewriter which was very difficult to use. All these things had to be managed and properly stored by people manually and in hard copy. But now, all such documents can be easily created, managed, stored and even shared with the help of Computers. With the help of computers people don’t have to make handwritten documents or letters, or even bother with the burden of storing and maintaining them. And with handwritten documentations and calculations the chances of error is high, but with the technology nowadays it has been made more easier to avoid error. All of these things can be easily created, managed, stored, and accessed anytime, increasing the productivity of an individual massively and also saving time and effort.
+                </p>
+                <img src="../images/Productivity.png" alt="Productivity" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the "Accessibility of Information" part of the blog-->
+                <h3 id="Accessibility of Information" style="padding-top: 150px;">3. Accessibility of Information</h3>
+                <p><!--Text content of the above sub-topic-->
+                    Before the advancements in technology, the only source of information people could get was by either reading related books or reading newspapers. But after the advancements in technology, people could get information through many sources. The main sources of information are considered to be televisions and the internet. Through television news you could find out what was happening around the world and at the same time it could also be used as a source of entertainment. Whereas in the internet, you could find detailed information about the topic you need. Many communities have even worked together in order make it easier and simpler to access information through the internet.
+                </p><br>
+                <img src="../images/Accessing Information.jpg" alt="Information Access" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the "Increase in Commercial Activities" part of the blog-->
+                <h3 id="Increase in Commercial Activities" style="padding-top: 150px;">4. Increase in Commercial Activities</h3>
+                <p><!--Text content of the above sub-topic-->
+                    When a person needs to buy something he would go to the shop and buy it from the shopkeeper, and that is how buying and selling of goods worked between customer and salesman before technological advancements. But, after the advancement of technology and everyone has got access to internet, a new method of buying and selling goods started taking pace, it is now known as e-commerce. With the help of e-commerce customers could browse any goods they want and have it delivered on their doorstep making it easy for the customer. At the same, the salesman running the e-commerce website is able to handle and manage the business more efficiently along with that there will be no further expense for extensive manpower and the communication between the customer and the salesman will be much more clearer.
+                </p><br>
+                <img src="../images/E-commerce.png" alt="E-commerce" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the "Hindrance in Privacy" part of the blog-->
+                <h3 id="Hindrance in Privacy" style="padding-top: 150px;">5. Hindrance in Privacy</h3>
+                <p><!--Text content of the above sub-topic-->
+                    With all this advancement in technology and the easy access to the internet all of us obviously make use of them. But, what we don’t think about is about our privacy online. Whenever we visit a website we leave a digital footprint behind, and hackers and scammers take full advantage of that and strike us in our most vulnerable position for their financial gain. That is why we must always be careful while browsing through the internet. We must also always use secure and different passwords for each of the services we use on the internet. Along with that, we must never share our personal data and information with anyone even though they are our closed ones. Although there are many ways to prevent for hackers and scammers to steal our data and information, we must always stay vigilant and cautious while surfing through the internet.
+                </p><br>
+                <img src="../images/hacker.jpg" alt="Hackerman" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+            <br><br>
+            <div><!--Another div tag is used for the conclusion part of the blog-->
+                <h2 id="Conclusion" style="padding-top: 150px;">Conclusion</h2>
+                <p><!--Text content of the conclusion-->
+                    Technology now is one of the most vital parts of our lives as it is used in every sector nowadays such as healthcare, agriculture, transportation, education, etc. With the current developing speed of technologies it will always have its positive and negative sides. And, technology is one of the few things which no one can stop from advancing. So, the only thing we can do is to stay aware of its impacts and keep being updated on its advancements. And we should always be aware of the facts that in one way or the other technology will keep affecting our lives.
+                </p><br>
+                <img src="../images/Shaking hands.avif" alt="Shaking hands" style="width: 700px;"><!--An image related to the above topic is inserted using img tag-->
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- This is the footer section -->
+    <footer style="z-index: 1; position: relative;">
+        <!-- Here, we create a div element with class="contact" where we create other div elements within the "contact" for displaying the company's contact numbers and socials. -->
+        <div class="contact">
+            <div id="details">
+                <h2 style="text-align: center; color: #f1be32; padding-top: 30px;">PRINTING EXCELLENCE, BEYOND EXPECTATIONS.</h2>
+             </div>
+            <div class="socials">
+                <h4>Get in touch with us</h4>
+                <p>Contact us at: 01-4544465, 01-4589225, 01-435288</p>
+                <p>Follow Us on:</p>
+                <a href="#"><img src="../images/facebook.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/instagram.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/youtube.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/pinterest.png" width="45px" height="45px"></a>
+            </div>
+
+
+        </div>
+
+        <hr>
+        <!-- Creating another div with class="footermain" -->
+        <div class="footermain">
+            <!-- links for displaying more information regarding the company's day to day activities and overall management -->
+            <div class="printerworldlinks">
+              <h5 style="padding: 13px 13px">ABOUT PRINTERWORLD</h5>  
+              <li><a href="#">Corporate Information</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Research and Development</a></li>
+              <li><a href="#">Site map</a></li>
+            </div>
+            
+            <!-- links for users to learn about accessing or making their account in printerworld. -->
+            <div class="printerworldlinks">
+                <h5 style="padding: 13px 13px">MYPRINTERWORLD ACCOUNT</h5>  
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">My subscriptions</a></li>
+                <li><a href="#">Register Your Product</a></li>
+                <li><a href="#">Canon Professional Services</a></li>
+              </div>
+            
+              <!-- links for users to learn about terms and conditions of PrinterWorld -->
+              <div class="printerworldlinks">
+                <h5 style="padding: 13px 13px">ORDER HELP</h5>  
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns and Exchanges</a></li>
+                <li><a href="#">Warranty Information</a></li>
+              </div>  
+
+              
+              <!--Links for contact details of the company for customer care  -->
+              <div class="printerworldlinks">
+                <h5 style="padding: 13px 13px">PRODUCT RESOURCES</h5>  
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Product Support</a></li>
+                <li><a href="#">Product Advisories</a></li>
+                <li><a href="#">Service and Repairs</a></li>
+                <li><a href="#">printerworld community</a></li>
+              </div> 
+              
+              <!--Legal links for users to maintain their privacy and data integrity while using the website. -->
+              <div class="printerworldlinks">
+                <h5 style="padding: 13px 13px">LEGAL</h5>  
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Informationt </a></li>
+                <li><a href="#">Cookie Rights</a></li>
+                <li><a href="#">Your Privacy Rights</a></li>
+                <li><a href="#">To Our Customers</a></li>
+                <li><a href="#">Supplier Terms and Conditions</a></li>
+              </div>    
+        </div>
+
+        <!-- This is the copyright caption of the footer element -->
+        <div class="fcaption">
+            <p style="margin-left: 70px;">&copy;2024 printerworld Nepal, Inc. All Rights Reserved.</p>
+        </div>          
+    </footer>
+    <script>
+    //This is the JavaScript for the above side table
+        window.onscroll = function() {scroll()};
+        var table = document.getElementById("Table");
+        var tablescroll = table.offsetTop;
+        function scroll() 
+        {
+            if (window.pageYOffset >= tablescroll) 
+            {
+                table.classList.add("tablescroll")
+            } 
+            else 
+            {
+                table.classList.remove("tablescroll");
+            }
+            
+        }
+    </script>
+</body>
+</html>

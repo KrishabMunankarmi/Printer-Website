@@ -1,0 +1,618 @@
+/*The file styles.css was created by creating a link element in the head called<link rel="stylesheet" href="styles.css">.
+This is also called external CSS which helps users to style their HTML elements in a seperate file with .css extension */
+
+
+/* The selector given below is also known as global selector which targets all the elements for styling. */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Montserrat;
+    background-color: #eee;
+}
+/* This is an example of id selector denoted by'#' where we are targeting a section element named 'section id="header" ' */
+#header {
+    background-color: #0e1845;
+    /* Here, we are using the concept of Flexbox to position the navbar elements in #header horizontally along the main-axis. The elements default position is in row while applying 'Display="flex" ' */
+    display: flex;
+    align-items: center;
+    /* The justify-content element of the flexbox helps to give equal amount of space between each particular items in the main axis and first and last elements are pushed to the edges */
+    justify-content: space-between;
+    /* The border-radius property is used to give rounded corners for an element's borders. */
+    border-radius: 10px;
+    /* When we keep the position fixed and give it a top of zero, the navbar stays fixed on the top of the viewport even if the user scrolls through the page. */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+h1 {
+    font-family: Montserrat;
+    color: #f1be32;
+    font-size: 40px; 
+
+}
+
+/* The selector given below is also called a class selector in CSS. It is specified in the syntax ".class name" */
+/* .navbar {
+    display: flex;
+    
+} */
+#nav_link {
+    
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 20px;
+       
+}
+
+#nav_link li {
+    padding-right: 20px ;
+    list-style: none;
+}
+
+
+#nav_link a:link{
+    text-decoration: none;
+    color: #dfdfe2;
+}
+
+#nav_link a:visited {
+    text-decoration: none;
+    color: #dfdfe2;
+}
+
+/* This id selector below is targeting the anchor tag within #nav_link to apply the styling when a user is hovering above the respective anchor tag.
+In this context, we are targeting the navigation menu items i.e: Home, Products, Blog, References and About Us.*/
+#nav_link a:not(.button):hover{
+    /* background-color: #dfdfe2; */
+    /* color: black; */
+    color: #333333;
+    background-color: whitesmoke;
+    transition: 0.4s;
+}   
+
+
+#nav_link a:active{
+    background-color: #333333;
+    color: white;
+}
+
+#first {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+#second {
+   text-align: left;
+   margin-left: 25%; 
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+
+.desc p {
+    font-size: 15px;
+}
+
+.displayeditems{
+    display: flex;
+}
+
+.displayeditems .printerdesc, .megatankdesc, .compactdesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 35%;
+    height: 500px;
+    background-color: rgb(10, 4, 4);
+    color: #eee;
+    padding: 25px;
+    margin: 25px 0 25px 25px;
+}
+
+.displayeditems .homeprinterphoto, .megatankprinterphoto, .compactprinter {
+    margin-top: 25px;
+}
+
+.displayeditems .officedesc, .largedesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 35%;
+    height: 500px;
+    background-color: rgb(10, 4, 4);
+    color: #eee;
+    margin-top: 25px;
+    padding: 20px 20px;
+    
+}
+
+
+.displayeditems .officeprinter, .largeprinter{
+  margin-left: 420px;
+  margin-top: 25px;
+}
+
+footer {
+  background-color:#0e1845;
+  bottom: 0;
+  color: #eee;
+  width: 100%;
+}
+
+
+.footermain{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.printerworldlinks {
+    color: whitesmoke;
+    margin: 20px ;
+}
+
+.printerworldlinks li{
+    font-size: 12px;
+    text-align: justify;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.printerworldlinks a {
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+}
+
+
+
+.socials {
+  padding-left: 80px;
+}
+
+
+.socials img{
+    padding-right: 2px;
+}
+
+
+/* --------------------------------------------End of Home Page Styling-------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Product page */
+#banner{ 
+    text-align: center;   /* Centers the text */
+   margin-top: 155px;    /* Sets the top margin og the banner section */
+   margin-bottom: 20px;  /* Sets the bottom margin og the banner section */
+  
+
+}
+
+#banner .container{
+   width: 100%;   /* Sets the width to 100percent of the banner section */
+   height: 70%;
+   position: relative;  /* The section is positioned relative to its default position  */
+   
+}
+.container {
+    margin-left: 400px;
+}
+
+.container .image{
+   display: none;  /* Hides the image used for image slider*/
+   
+}
+
+.container .image img{
+   width: 90%;
+   height: 800px;
+   object-fit: cover;
+   border-radius: 15px;
+   overflow: hidden;  /*  Hides the scroll conatiner*/
+   
+   
+}
+
+.container .button{
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 1330px;
+   display: flex;                      /* aligns  the buttons of image slider */
+   justify-content: space-between;    /* Sets the space for buttons  */
+   z-index: 5;                       /* Controls the overlapping of elements on a page*/
+   
+}
+
+.container .button a{
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   vertical-align: middle;
+   align-items: center;  
+   cursor: pointer;     /*  displays the mouse cursor when pointing over */
+   color: white;
+   background: rgba(0, 0, 0, 0.8);
+   font-size: 20px;
+   user-select: none;    /*  Prevents text selection */
+   
+}
+
+.container .button .prev{
+   border-radius: 0 5px 5px 0;
+   margin-left: 10px;
+}
+
+.container .button .next{
+   border-radius: 5px 0 0 5px;
+   padding-left: 11px ;
+   
+}
+
+.dots{
+   text-align: center;
+   position: absolute;
+   bottom: 8px;
+   left: 45%;
+   background: rgba(0, 0, 0, 0.8);   /*  Sets the background color*/
+   padding: 5px 10px;                   /*  Sets the space between the contents */
+   height: 30px;
+   border-radius: 15px;
+
+}
+
+.dot{
+   cursor: pointer;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   background: #bbb;
+   display: inline-block;
+   margin: 0 2px;
+}
+
+.active, .dot:hover{
+   background: yellow;    /*  Sets the color yellow when pointing over the button  */
+}
+
+
+#product1{
+   text-align: center; 
+}
+
+#product1 .pro-container{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+   flex-wrap: wrap;       /*  Wraps the product item to next line */
+}
+
+#product1 .pro {
+   width: 30%;
+   min-height: 240px;
+   padding: 10px 12px;
+   border: 1px solid #f1be32;
+   border-radius: 25px;
+   cursor: pointer;
+   box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+   margin: 15px 0;
+   transition: 0.25s ease;
+   position: relative;
+   
+}
+#product1 .pro:hover{
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.20);
+}
+
+#product1 .pro img{
+   width: 100%;
+   border-radius: 20px;
+   
+}
+#product1 .pro .desc{
+text-align: start;
+padding: 10px 0;
+}
+#product1 .pro .desc span{
+color: rgb(255, 0, 0);
+font-size: 12px;
+}
+
+#product1 .pro .desc h4{
+   padding-top: 7px;
+   color: #1a1a1a;
+   font-size: 16px;
+}
+#product1 .pro .desc i{
+   font-size: 13px;
+   color: rgb(243,181,25);
+}
+#product1 .pro .desc h3{
+   padding-top: 7px;  
+   font-weight: 700;
+   color: orangered;
+}
+
+#product1 .pro img.cart{
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   border-radius: 50px;
+   background-color:rgba(224, 209, 181, 0.929);
+   font-weight: 500;      /*  Sets the font of medium thickness */
+  position: absolute;
+  bottom:20px;
+  right: 10px;
+   
+}
+
+#pagination{
+   text-align: center;
+   margin-bottom: 40px;
+   
+   
+}
+
+#pagination a{
+   text-decoration: none;
+   background-color:#088178 ;
+   padding: 15px 20px;
+   border-radius: 4px;
+   color: white;
+   font-weight: 500;
+
+}
+
+
+
+/* Single product */
+#prodetails{
+   display: flex;
+   margin-top: 155px;
+}
+#prodetails .single-pro-image{
+   width: 40%;
+   margin-right: 50px;
+   background-color: rgb(197, 207, 204);
+
+}
+.small-img-group{
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(160, 190, 181);
+   border-radius: 20px;
+}
+
+.small-img-col{
+   flex-basis: 24%;       /*  Sets the small image of product to size of 24 percent */
+   cursor: pointer;  
+}
+.small-img-col:hover{
+   background-color: rgba(43, 23, 151, 0.66) ;
+   
+}
+
+#prodetails .single-pro-details{
+   width: 50%;
+   padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+   color: #25293a;
+
+}
+
+#prodetails .single-pro-details h2{
+   color:orangered ;
+}
+
+#prodetails .single-pro-details input{
+   width:45px;
+   height: 45px;
+   padding-left: 10px;
+   font-size: 16px;
+   margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+   background-color: rgb(255, 145, 0);
+   color: white;
+   height: 50px;
+   width: 20%; 
+   cursor: pointer;
+}
+
+#prodetails .single-pro-details span{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   line-height: 26px;
+   color: rgb(95, 85, 85);
+}
+
+/* --------------------------------------------End of Product Page Styling-------------------------------------------------------------- */
+
+/* Blog Page Stlying */
+.Image /*Styling of content inside the class Image*/
+    {
+        position:relative;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 1%;
+    }
+.Image img /*Styling of the image in the class Image*/
+    {
+        margin-top: 110px;
+        width: 1500px;
+        height: 750px; 
+        filter:brightness(30%)
+        
+    }
+.HeadText /*Styling of content inside the class HeadText*/
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        font-family: 'Anton', sans-serif;
+        font-size:125px;
+    }
+.SubText /*Styling of content inside the class SubText*/
+    {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+    }
+.Technology /*Styling of content inside the class Technology*/
+    {
+        margin-left: 25%;
+        margin-right: 27%;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-family: 'Baskervville', serif;
+    }
+#Table /*Styling of content inside the id Table*/
+    {
+        text-align: center;
+        overflow: hidden;
+        margin-right: 75%;
+        scroll-behavior: smooth;
+        position: fixed;
+    }
+#Table a /*Styling of active link inside the id Table*/
+    {
+        color: white;
+        text-align: center;
+    }
+#Table a:hover /*Styling of active link on hover inside the id Table*/
+    {
+        background-color: #ddd;
+        color: black;
+    }
+.tablescroll /*Styling the table scrolling element*/
+    {
+        position: fixed;
+        top: 320px;
+        width: 100%;
+    }
+/* --------------------------------------------End of Blog Page Styling-------------------------------------------------------------- */
+
+/* About Us Styling */
+
+
+.companybackground{
+    background-image: url('../images/printerbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px; 
+    margin: 100px 0 0 0;
+}
+
+.companyintro {
+    width: 950px;
+    padding-left: 110px ;
+    padding-top: 80px;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 20px;
+
+    
+}
+.companyintro h1{
+    color: green;
+}
+/* --------------------------------------------End of About Us Page Styling-------------------------------------------------------------- */
+
+
+/*individual Portfolio section*/
+.CV {
+    background-color: #333333;
+    color: #eee;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+.icons {
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.icons a{
+    margin-right: 40px;
+}
+
+.container{
+    display: flex;
+    margin-left: 120px;
+    
+}
+.box1 {
+    width: 800px;
+    height: 700px;
+    background-color: #d2d1d1;
+    color:rgb(10, 4, 4);
+    padding: 10px 50px;
+
+}
+.box1 p{
+    color: black;
+}
+
+
+
+#table1 {
+    color: whitesmoke;
+    border: 10px solid whitesmoke;
+    /* border-collapse: collapse; */
+    border-radius: 5px;
+}
+
+tr.comparison img {
+  width: 790px;
+  margin-top: 15px;
+
+}
+
+

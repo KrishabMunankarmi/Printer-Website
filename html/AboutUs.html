@@ -1,0 +1,194 @@
+<!-- This is the HTML code for the About Us Page of printerWorld -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta data for writing the author name and the description helps the users for Search Engine Optimization -->
+    <meta name="author" content="Santosh Lama">
+    <meta name="description" content="About printerWorld">
+    <title>About Us Page | printerworld</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+
+
+<style>
+    @font-face {
+        font-family: Montserrat;
+        src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    }
+    .searchbar {
+        display: flex;
+        align-items: center;
+        background-color: grey;
+    }
+
+    .searchbar input[type="text"] {
+        width: 220px;
+        height: 20px;
+    }
+    .Login {
+            background-color: #0e1845; 
+            color: whitesmoke; 
+            border: 2px solid white;
+            font-weight:800;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+</style>
+    
+</head>
+<body class="bg color" style="background-color: #cde01d;">
+    <section id="header">      
+        <a href="#" class="logo"><img width="80px" height="80px" src="../images/printer.png" alt="Printer Logo"> </a>
+        <h1 >printerworld.com</h1>
+    
+
+    <div class="searchbar">
+        <input type="text" placeholder="Search products, support and more" >
+        <img src="../images/search icon.png" alt="search icon" width="20" height="20">
+    </div>
+        <nav >
+            <ul id="nav_link">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../html/Product.html">Products</a></li>
+                <li><a href="../html/Blog.html">Blog</a></li>
+                <li><a href="../html/References.html">References</a></li>
+                <li><a href="../html/AboutUs.html">About Us</a></li>      
+                <li><a href="../html/LogIn.html" class="button"><button class="Login">LOG IN</button></a></li>     
+            </ul>
+        </nav>
+    </section>
+
+<!-- Here, we use a new section tag to group the About Us content together within the background image -->
+<section id="companyhead">
+    <!-- We have used a div tag to put a background-image(from external CSS) -->
+    <div class="companybackground">
+
+        <!-- Another div tag is used with class named 'companyintro'  -->
+        <div class="companyintro">
+
+            <h1>WELCOME TO PRINTERWORLD!</h1>
+            <!-- While writing the details about printerWorld, we used the span tag to highlight the keywords within paragraph<p> tag -->
+            <p style="color: #333333">Welcome to<span class="bold"> PrinterWorld</span> – Your One-Stop Shop for Quality Printers!</p>
+            <p style="color: #333333"> PrinterWorld is your trusted destination for top-tier printers and printing solutions. As a reputed online platform, we offer a curated selection of cutting-edge printers to meet your diverse needs.</p>
+            <p style="color: #333333"> Explore our range, experience seamless shopping, and elevate your printing experience with PrinterWorld – where quality meets convenience.</p>
+            <a href="../html/Portfolio.html" target="_blank">
+                <button class="CV">See More</button>  
+            </a>  
+            <br>
+            <br>
+
+            <p style="color: #333333"><a href="../html/Feedback.html" target="_blank">If you have any questions regarding our website, leave a feedback here.</a></p>
+
+            </div>
+ 
+    </div>
+</section>
+
+
+
+
+
+    <!-- This is the footer section -->
+    <footer>
+        <!-- Here, we create a div element with class="contact" where we create other div elements within the "contact" for displaying the company's contact numbers and socials. -->
+        <div class="contact">
+
+            <div id="details">
+                <h2 style="text-align: center; color: #f1be32; padding-top: 30px;">PRINTING EXCELLENCE, BEYOND EXPECTATIONS.</h2>
+             </div>
+
+            <div class="socials">
+                <h4>Get in touch with us</h4>
+                <p>Contact us at: 01-4544465, 01-4589225, 01-435288</p>
+                <p>Follow Us on:</p>
+                <a href="#"><img src="../images/facebook.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/instagram.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/youtube.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/pinterest.png" width="45px" height="45px"></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Creating another div with class="footermain" -->
+
+        <div class="footermain">
+
+            <!-- links for displaying more information regarding the company's day to day activities and overall management -->
+
+            <div class="printerworldlinks">
+
+              <h5 style="padding: 13px 13px">ABOUT PRINTERWORLD</h5>  
+              <li><a href="#">Corporate Information</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Research and Development</a></li>
+              <li><a href="#">Site map</a></li>
+
+            </div>
+            
+            <!-- links for users to learn about accessing or making their account in printerworld. -->
+            <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">MYPRINTERWORLD ACCOUNT</h5>  
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">My subscriptions</a></li>
+                <li><a href="#">Register Your Product</a></li>
+                <li><a href="#">Canon Professional Services</a></li>
+
+              </div>
+            
+              <!-- links for users to learn about terms and conditions of PrinterWorld -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">ORDER HELP</h5>  
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns and Exchanges</a></li>
+                <li><a href="#">Warranty Information</a></li>
+
+              </div>  
+
+              
+              <!--Links for contact details of the company for customer care  -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">PRODUCT RESOURCES</h5>  
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Product Support</a></li>
+                <li><a href="#">Product Advisories</a></li>
+                <li><a href="#">Service and Repairs</a></li>
+                <li><a href="#">printerworld community</a></li>
+
+              </div> 
+              
+              <!--Legal links for users to maintain their privacy and data integrity while using the website. -->
+              <div class="printerworldlinks">
+                
+                <h5 style="padding: 13px 13px">LEGAL</h5>  
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Informationt </a></li>
+                <li><a href="#">Cookie Rights</a></li>
+                <li><a href="#">Your Privacy Rights</a></li>
+                <li><a href="#">To Our Customers</a></li>
+                <li><a href="#">Supplier Terms and Conditions</a></li>
+                
+              </div>    
+
+        </div>
+
+        <!-- This is the copyright caption of the footer element -->
+        <div class="fcaption">
+            <p style="margin-left: 70px;">&copy;2024 printerworld Nepal, Inc. All Rights Reserved.</p>
+        </div>          
+    </footer>
+    
+</body>
+</html>

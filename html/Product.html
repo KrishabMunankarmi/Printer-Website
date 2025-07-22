@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta data for writing the author name and the description helps the users for Search Engine Optimization -->
+    <meta name="author" content="Suyash Koirala">
+    <meta name="description" content="Printer sale at discount | printerworld">
+
+    <title>Product Page | printerWorld</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="icon" href="../images/high quality logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: Montserrat;
+            src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+        }
+        .searchbar {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .searchbar input[type="text"] {
+            width: 220px;
+            height: 20px;
+        }
+        .Login {
+            background-color: #0e1845; 
+            color: whitesmoke; 
+            border: 2px solid white;
+            font-weight:800;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+      
+        body {
+           overflow-x: hidden ; 
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!--Header section of the product page-->
+    <section id="header"> 
+        <!-- Logo and site name -->     
+           <a href="#" class="logo"><img width="70px" height="70px" src="../images/printer.png" alt="Printer Logo"> </a>
+           <h1>printerworld.com</h1>
+       
+       <!-- Searchbar -->
+       <div class="searchbar">
+           <input type="text" placeholder="Search products, support and more" >
+           <img src="../images/search icon.png" alt="search icon" width="20" height="20">
+       </div>
+
+       <!-- The nav tag contains Navigation Menu  -->
+           <nav >
+
+               <ul id="nav_link">
+                   <li><a href="../home.html" target="_blank">Home</a></li>
+                   <li><a href="../html/Product.html" target="_blank">Products</a></li>
+                   <li><a href="../html/Blog.html" target="_blank">Blog</a></li>
+                   <li><a href="../html/References.html" target="_blank">References</a></li>
+                   <li><a href="../html/AboutUs.html" target="_blank">About Us</a></li>      
+                   <!-- <li><a href="#" target="_blank"><img src="profile logo.png" style="width: 60px; height: 60px; padding-left: 1px;"></a></li>       -->
+                   <li><a href="../html/LogIn.html" class="button"><button class="Login">LOG IN</button></a></li>
+
+               </ul>
+
+           </nav>
+
+   </section>
+
+<!--Banner section of the product page-->
+    <section id="banner">
+
+        <div class="bancont">
+
+            <div class="pro-ban">
+                <img src="../images/onlineprinter.jpg" alt="">
+            </div>
+            <br>
+            
+            <div class="container"> <!--This division class contains image slider element -->
+               
+                <div class="image">
+
+                    <img src="../images/INK-TANK-BANNER.gif" alt="">
+
+                </div>
+
+                <div class="image">
+
+                    <img src="../images/hp laser/HP LaserJet Pro MFP 4101fdn(ii).png" alt="">
+
+                </div>
+
+                <div class="image">
+
+                    <img src="../images/office printer.png" alt="">
+
+                </div>
+
+                <div class="image">
+
+                    <img src="../images/onlineprinter.jpg" alt="">
+                    
+                </div>
+
+                <div class="image">
+
+                    <img src="../images/Megatank printer.png" alt="">
+
+                </div>
+        
+                <div class="button">   <!--This class contains the button prev and next used in image slider-->
+
+                    <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                    <a onclick="nextimg(1)" class="next">&#10095;</a>
+
+                </div>
+        
+                <div class="dots">    <!--Dots class  contains dots that slides the image on clicking -->
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--Product section of the product page-->
+    <section id="product1" class="section-p1">
+        <h1 style="color: rgba(0, 0, 255, 0.434);">Featured Products</h1>
+        <div class="pro-container">    <!--This class contains the image of the product -->
+            <div class="pro" onclick="window.location.href='singleproduct.html';">
+                <img src="../images/Canon inkjet/MAXIFY GX1070.png" alt="">
+                <div class="desc">     <!--This class provides short description of product-->
+                    <span>Canon</span>
+                    <h4 style="margin: 0%;"> Canon Maxify GX1070 MegaTank Wireless MF A4 Printer</h4>
+                    <div class="star" >   <!--This class provides rating of product-->
+                       <i class="fas fa-star"></i>   <!--i class "fas fa-star" is used for star icon from font-awesome -->
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                    </div>
+                    <h5 style="margin: 0;"><s>Rs. 75,000</s></h5>
+                    <h3 style="margin: 0;"> Rs. 69,000</h3>
+                </div>
+             <img class="cart" src="../images/cart.png"  alt="cart" >  <!--Contains image of cart -->
+           </div>
+           <div class="pro" onclick="window.location.href='singleproduct2.html';" >
+            <img src="../images/brother inkjet/Brother DCP-T820DW.webp" alt="">
+            <div class="desc">
+                <span>Brother</span>
+                <h4 style="margin: 0%;"> Brother DCP-T820DW All-in-One Refill Ink Tank Printer</h4>
+                <div class="star" >
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                </div>
+                <h5 style="margin: 0;"><s>Rs. 60,500</s></h5>
+                <h3 style="margin: 0;"> Rs. 52,999</h3>
+            </div>
+         <img class="cart" src="../images/cart.png"  alt="cart" >
+       </div>
+       <div class="pro" onclick="window.location.href='singleproduct3.html';">
+        <img src="../images/hp inkjet/HP Smart Tank 7602.png" alt="">
+        <div class="desc">
+            <span>HP</span>
+            <h4 style="margin: 0%;"> HP Smart Tank 7602 All-in-OneHP LaserJet Enterprise M806x+ Black & White Laser Printer</h4>
+            <div class="star" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <h5 style="margin: 0;"><s>Rs. 25,500</s></h5>
+            <h3 style="margin: 0;"> Rs. 16,800</h3>
+        </div>
+     <img class="cart" src="../images/cart.png"  alt="cart" >
+   </div>
+   <div class="pro" onclick="window.location.href='singleproduct4.html';">
+    <img src="../images/canon laser/LBP458x.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon imageCLASS LBP458x</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 77,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 69,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro" onclick="window.location.href='singleproduct5.html';" >
+    <img src="../images/hp laser/HP LaserJet Enterprise M806x+.webp" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP LaserJet Enterprise M806x+ Black & White Laser Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 47,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 36,500</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp laser/HP Color LaserJet Pro 4201dn.png" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP Color LaserJet Pro 4201dn</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 20,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 16,400</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother laser/DCP-B7500D.jpg" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> Brother DCP-B7500D 3-in-1 Multi-Function Printer </h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 17,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 12,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/canon laser/MF3010.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon MF3010 imageCLASS 3 in 1 Multifunction Laser Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 31,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 24,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp inkjet/HP DesignJet T850.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon MG2570S 3 in 1 Multi-Function Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 1,07,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 99,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro" onclick="window.location.href='singleproduct6.html';">
+    <img src="../images/Canon inkjet/Canon Pixma E560.webp" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon Pixma E560 Auto-Duplex and Wireless 3 In 1 Inkjet Colour Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 17,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 13,500</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp inkjet/HP OfficeJet Pro 7740.png" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP OfficeJet Pro 7740 Wide Format All-in-One Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 37,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 29,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother laser/HL-L2370DN A4 Mono.webp" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> Brother HL-L2370DN A4 Mono Laser Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 7,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 6,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/canon laser/MF469x.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon imageCLASS MF469x Robust 4-in-1 Multifunction Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 30,999</s></h5>
+        <h3 style="margin: 0;"> Rs. 26,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother laser/HL-L3270CDW.webp" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> Brother HL-L3270CDW Laser Printer - Color</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 87,400</s></h5>
+        <h3 style="margin: 0;"> Rs. 79,400</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp inkjet/HP OfficeJet Pro 9015e.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> HP OfficeJet Pro 9015e Wireless Color All-In-One Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 48,167</s></h5>
+        <h3 style="margin: 0;"> Rs. 33,344</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/Canon inkjet/Canon Pixma G2020.webp" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon pixma G2020 3 in 1 Multi-Function InkTank Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 18,999</s></h5>
+        <h3 style="margin: 0;"> Rs. 14,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother inkjet/Brother DCP-T820DW.webp" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> Brother DCP-T820DW 3 in 1 Multi-Function Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 7,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 6,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/Canon inkjet/Canon Pixma GM4070.webp" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon Pixma GM4070 Wireless Auto-Duplex Ink Tank</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 36,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 30,900</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp laser/HP Color LaserJet Pro MFP M182nw.png" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP Color LaserJet Pro MFP M182nw Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 74,100</s></h5>
+        <h3 style="margin: 0;"> Rs. 66,700</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp laser/HP LaserJet MFP M234dw.png" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP LaserJet MFP M234dw Wireless Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 33,340</s></h5>
+        <h3 style="margin: 0;"> Rs. 27,650</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother inkjet/Brother MFC-J2330DW.webp" alt="">
+    <div class="desc">
+        <span>Brother
+        </span>
+        <h4 style="margin: 0%;"> Brother MFC-J2330DW 3 in 1 Multi-Function Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 97,300</s></h5>
+        <h3 style="margin: 0;"> Rs. 89,999</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro" onclick="window.location.href='singleproduct7.html';">
+    <img src="../images/Canon inkjet/Canon MG2570S 3.webp" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon MG2570S 3 in 1 Multi-Function Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 7,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 6,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro" onclick="window.location.href='singleproduct7.html';">
+    <img src="../images/canon laser/MF274dn.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon laser MF274dn Laser Printer  ALL-IN-ONE</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 9,200</s></h5>
+        <h3 style="margin: 0;"> Rs. 7,900</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother inkjet/MFC-T4500DW.webp" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> brother inkjet MFC-T4500DW Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 16,400</s></h5>
+        <h3 style="margin: 0;"> Rs. 12,840</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/Canon inkjet/MAXIFY MB5470.png" alt="">
+    <div class="desc">
+        <span>Canon</span>
+        <h4 style="margin: 0%;"> Canon MAXIFY MB5470 3 in 1 Multi-Function Inkjet Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 27,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 21,600</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/hp laser/HP LaserJet Pro MFP 4101fdn.png" alt="">
+    <div class="desc">
+        <span>HP</span>
+        <h4 style="margin: 0%;"> HP LaserJet Pro Mfp 4101fdn All in 1 Laser Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 9,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 7,700</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+</div>
+<div class="pro">
+    <img src="../images/brother laser/MFCL2700DW.webp" alt="">
+    <div class="desc">
+        <span>Brother</span>
+        <h4 style="margin: 0%;"> Brother MFCL2700DW laser Printer</h4>
+        <div class="star" >
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h5 style="margin: 0;"><s>Rs. 17,500</s></h5>
+        <h3 style="margin: 0;"> Rs. 16,800</h3>
+    </div>
+ <img class="cart" src="../images/cart.png"  alt="cart" >
+     </div>
+      </div>
+ </section>
+
+ <!--Pagination section of the product page-->
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</i></a>
+ </section>
+
+  <!--Footer section of the product page-->
+
+    <footer>
+        <!-- Here, we create a div element with class="contact" where we create other div elements within the "contact" for displaying the company's contact numbers and socials. -->
+        <div class="contact">
+
+            <div id="details">
+                <h2 style="text-align: center; color: #f1be32; padding-top: 30px;">PRINTING EXCELLENCE, BEYOND EXPECTATIONS.</h2>
+             </div>
+
+            <div class="socials">
+                <h4>Get in touch with us</h4>
+                <p>Contact us at: 01-4544465, 01-4589225, 01-435288</p>
+                <p>Follow Us on:</p>
+                <a href="#"><img src="../images/facebook.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/instagram.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/youtube.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/pinterest.png" width="45px" height="45px"></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Creating another div with class="footermain" -->
+
+        <div class="footermain">
+
+            <!-- links for displaying more information regarding the company's day to day activities and overall management -->
+
+            <div class="printerworldlinks">
+
+              <h5 style="padding: 13px 13px">ABOUT PRINTERWORLD</h5>  
+              <li><a href="#">Corporate Information</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Research and Development</a></li>
+              <li><a href="#">Site map</a></li>
+
+            </div>
+            
+            <!-- links for users to learn about accessing or making their account in printerworld. -->
+            <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">MYPRINTERWORLD ACCOUNT</h5>  
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">My subscriptions</a></li>
+                <li><a href="#">Register Your Product</a></li>
+                <li><a href="#">Canon Professional Services</a></li>
+
+              </div>
+            
+              <!-- links for users to learn about terms and conditions of PrinterWorld -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">ORDER HELP</h5>  
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns and Exchanges</a></li>
+                <li><a href="#">Warranty Information</a></li>
+
+              </div>  
+
+              
+              <!--Links for contact details of the company for customer care  -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">PRODUCT RESOURCES</h5>  
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Product Support</a></li>
+                <li><a href="#">Product Advisories</a></li>
+                <li><a href="#">Service and Repairs</a></li>
+                <li><a href="#">printerworld community</a></li>
+
+              </div> 
+              
+              <!--Legal links for users to maintain their privacy and data integrity while using the website. -->
+              <div class="printerworldlinks">
+                
+                <h5 style="padding: 13px 13px">LEGAL</h5>  
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Informationt </a></li>
+                <li><a href="#">Cookie Rights</a></li>
+                <li><a href="#">Your Privacy Rights</a></li>
+                <li><a href="#">To Our Customers</a></li>
+                <li><a href="#">Supplier Terms and Conditions</a></li>
+
+              </div>    
+
+        </div>
+
+        <!-- This is the copyright caption of the footer element -->
+        <div class="fcaption">
+            <p style="margin-left: 70px;">&copy;2024 printerworld Nepal, Inc. All Rights Reserved.</p>
+        </div>          
+    </footer>
+
+ <!-- Here we are using internal Javascript for image slider in between <script>..</script>-->
+<script>
+
+// Function for image slider
+    var imageno =1;
+    displayimg(imageno);
+
+    function nextimg(n){
+        displayimg(imageno += n)
+    }
+
+    function currentSlide(n){
+        displayimg(imageno = n)
+    }
+
+    function displayimg(n){
+        var i;
+        var image = document.getElementsByClassName("image");   //returns the element with class image
+        var dots = document.getElementsByClassName("dot");       //returns the element with class image
+
+        if(n > image.length){
+            imageno = 1;
+        }
+
+        if(n < 1){
+            imageno = image.length;
+        }
+
+        for(i=0; i < image.length; i++){         //Loop through all image elemnts and hide them
+            image[i].style.display = "none";
+        }
+
+        for(i=0; i < dots.length; i++){          //Loop through all the dots elements and remove the active class
+            dots[i].className = dots[i].className.replace(" active", "");
+            
+        }
+
+        image[imageno - 1].style.display ="block";  //Make the element visible by setting its display property to "block"
+        dots[imageno - 1].className += " active";   // Add "active" class to the dot element
+
+    }
+    
+
+</script>
+</body>
+</html>
+
+
+
+    
+
+    
+
+
+
+
+
+

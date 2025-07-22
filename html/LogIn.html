@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | printerworld</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <style>
+    
+
+        label
+        {
+            color: #f1be32;
+        }
+        
+        p
+        {
+            color: #f1be32;
+        }
+        
+        h1
+        {
+            color: #f1be32;
+        }
+
+        * {box-sizing: border-box}
+        
+        input[type=text], input[type=password] 
+        {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: white;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus 
+        {
+            background-color: #ddd;
+            outline: none;
+        }
+        
+        button 
+        {
+            background-color: #f1be32;
+            color: #0e1845;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        button:hover 
+        {
+            opacity:1;
+        }
+
+        .loginform
+        {
+            padding: 16px;
+        }
+
+        .Login
+        {
+            background-color: #0e1845;
+            margin: 5% auto 15% auto; 
+            border: 10px solid #f1be32;
+            width: 35%;
+        }
+
+        .loginBody {
+            background-color: rgb(144, 157, 157);
+        }
+    </style>
+</head>
+<body class="loginBody">
+
+  
+    <!--Here we are creating a login form and concept of form validation i.e display of alert message to user.-->
+    <form class="Login" name="loginform" onsubmit="validationform()">
+
+        <div class="loginform">
+
+            <h1>Log In</h1>
+            <p>Please fill in this form to login to your account.</p><hr>
+            <label for="email"><b>Username/Email</b></label>
+            <input type="text" placeholder="Enter Username/Email" name="email" >
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" >
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label><br>
+            <a href="#" style="color:#f1be32;">Forgot Password?</a><br><br>
+            <a href="Sign Up.html" style="color:#f1be32;">Don't have an account? Sign up</a><br><Br>
+            <button type="submit" class="login">Log In</button>
+
+        </div>
+
+    </form>
+
+ 
+    <script src="../js/script.js"></script>
+</body>
+</html>

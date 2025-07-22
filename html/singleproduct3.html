@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suyash Koirala">
+    <meta name="description" content="Printer sale at discount | printerworld">
+    <title>Product 3</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+
+    
+
+    <style>
+        @font-face {
+            font-family: Montserrat;
+            src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+        }
+
+        .searchbar {
+            display: flex;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .searchbar input[type="text"] {
+            width: 220px;
+            height: 20px;
+        }
+
+        .Login {
+            background-color: #0e1845; 
+            color: whitesmoke; 
+            border: 2px solid white;
+            font-weight:800;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <!--Header section of the single product page-->
+    <section id="header"> 
+        <!-- Logo and site name -->     
+           <a href="#" class="logo"><img width="70px" height="70px" src="../images/printer.png" alt="Printer Logo"> </a>
+           <h1>printerworld.com</h1>
+       
+       <!-- Searchbar -->
+       <div class="searchbar">
+           <input type="text" placeholder="Search products, support and more" >
+           <img src="../images/search icon.png" alt="search icon" width="20" height="20">
+       </div>
+
+       <!-- The nav tag contains Navigation Menu  -->
+           <nav >
+               <ul id="nav_link">
+                   <li><a href="../home.html" target="_blank">Home</a></li>
+                   <li><a href="../html/Product.html" target="_blank">Products</a></li>
+                   <li><a href="../html/Blog.html" target="_blank">Blog</a></li>
+                   <li><a href="../html/References.html" target="_blank">References</a></li>
+                   <li><a href="../html/AboutUs.html" target="_blank">About Us</a></li>      
+                   <!-- <li><a href="#" target="_blank"><img src="profile logo.png" style="width: 60px; height: 60px; padding-left: 1px;"></a></li>       -->
+                   <li><a href="../html/LogIn.html" class="button"><button class="Login">LOG IN</button></a></li>
+               </ul>
+           </nav>
+   </section>
+
+     <!--Product details section of the single product page-->
+   <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">   <!--This class contains single product image -->
+       <img src="../images/hp inkjet/HP Smart Tank 7602.png" width="100%" id="mainImg">
+       <div class="small-img-group">    <!--This class contains multiple small product image -->
+        <div class="small-img-col">
+            <img src="../images/hp inkjet/HP Smart Tank 7602.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="../images/hp inkjet/HP Smart Tank 7602(ii).png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="../images/hp inkjet/HP OfficeJet Pro 7740.png" width="100%" class="small-img" alt="">
+        </div>
+       </div>
+    </div>
+    <div class="single-pro-details">       <!--This class contains description of single product -->
+        <h2>M806x</h2>
+        <h3>ALL-IN-ONE HP LaserJet Enterprise Black & White Laser Printer </h3>
+        <h4><s>Rs. 25,500</s></h4>
+         <h2>Rs. 16,800</h2>   
+         <input type="number" value="1">
+         <button class="normal" onclick="window.location.href='../html/LogIn.html';"><h3>Add to Cart</h3></button>
+         <h3>Specification:</h3>
+         <span>
+            Experience exceptional performance, cost-effective printing, and unmatched convenience with the 3-in-1 refillable ink printer.
+            <ul>
+                <li>Print, Scan, Copy</li>
+                <li>Print Speed (A4, ISO): up to 15 / 10 ipm (mono/colour)</li>
+                <li>Wi-Fi, LAN, AirPrint, Mopria, Direct Wireless</li>
+                <li>Recommended Monthly Print Volume: 150 - 1,500 pages</li>
+            </ul>
+         </span>
+    </div>
+   </section>
+
+  
+    <!-- This is the footer section -->
+    <footer>
+        <!-- Here, we create a div element with class="contact" where we create other div elements within the "contact" for displaying the company's contact numbers and socials. -->
+        <div class="contact">
+
+            <div id="details">
+                <h2 style="text-align: center; color: #f1be32; padding-top: 30px;">PRINTING EXCELLENCE, BEYOND EXPECTATIONS.</h2>
+             </div>
+
+            <div class="socials">
+                <h4>Get in touch with us</h4>
+                <p>Contact us at: 01-4544465, 01-4589225, 01-435288</p>
+                <p>Follow Us on:</p>
+                <a href="#"><img src="../images/facebook.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/instagram.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/youtube.png" width="45px" height="45px"></a>
+                <a href="#"><img src="../images/pinterest.png" width="45px" height="45px"></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Creating another div with class="footermain" -->
+
+        <div class="footermain">
+
+            <!-- links for displaying more information regarding the company's day to day activities and overall management -->
+
+            <div class="printerworldlinks">
+
+              <h5 style="padding: 13px 13px">ABOUT PRINTERWORLD</h5>  
+              <li><a href="#">Corporate Information</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Research and Development</a></li>
+              <li><a href="#">Site map</a></li>
+
+            </div>
+            
+            <!-- links for users to learn about accessing or making their account in printerworld. -->
+            <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">MYPRINTERWORLD ACCOUNT</h5>  
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">My subscriptions</a></li>
+                <li><a href="#">Register Your Product</a></li>
+                <li><a href="#">Canon Professional Services</a></li>
+
+              </div>
+            
+              <!-- links for users to learn about terms and conditions of PrinterWorld -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">ORDER HELP</h5>  
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Returns and Exchanges</a></li>
+                <li><a href="#">Warranty Information</a></li>
+
+              </div>  
+
+              
+              <!--Links for contact details of the company for customer care  -->
+              <div class="printerworldlinks">
+
+                <h5 style="padding: 13px 13px">PRODUCT RESOURCES</h5>  
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Product Support</a></li>
+                <li><a href="#">Product Advisories</a></li>
+                <li><a href="#">Service and Repairs</a></li>
+                <li><a href="#">printerworld community</a></li>
+
+              </div> 
+              
+              <!--Legal links for users to maintain their privacy and data integrity while using the website. -->
+              <div class="printerworldlinks">
+                
+                <h5 style="padding: 13px 13px">LEGAL</h5>  
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Do Not Sell or Share My Personal Informationt </a></li>
+                <li><a href="#">Cookie Rights</a></li>
+                <li><a href="#">Your Privacy Rights</a></li>
+                <li><a href="#">To Our Customers</a></li>
+                <li><a href="#">Supplier Terms and Conditions</a></li>
+
+              </div>    
+
+        </div>
+
+        <!-- This is the copyright caption of the footer element -->
+        <div class="fcaption">
+            <p style="margin-left: 70px;">&copy;2024 printerworld Nepal, Inc. All Rights Reserved.</p>
+        </div>          
+    </footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
+    
+
+    
+
+
+
+
+
+
